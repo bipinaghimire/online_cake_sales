@@ -1,0 +1,10 @@
+<form method="POST" action="">
+    {%csrf_token%}
+    {% comment %} name ==>front bata back ma data transfer {% endcomment %}
+    first name: <input type="text" name="firstname" >
+    last name: <input type="text" name="lastname" >
+    email : <input type="text" name="email" >
+    username: <input type="text" name="username" >
+    password: <input type="text" name="password" >
+    <input type="submit" value="register"/>
+</form>

@@ -1,0 +1,21 @@
+
+<a href="/customer/create">create new customer</a>
+<table>
+    <tr>
+        <th>fullname</th>
+        <th>address</th>
+        <th>action</th>
+    </tr>
+
+{% for c in customers%}
+    <tr>
+        <td>{{c.fullname}}</td>
+        <td>{{c.address}}</td>
+        <td>{{c.image}}</td>
+        <td>
+            <a href="/customer/edit/{{c.id}}">edit</a>
+            <a href="/customer/delete/{{c.id}}">delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

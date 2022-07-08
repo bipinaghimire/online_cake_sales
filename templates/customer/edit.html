@@ -1,0 +1,11 @@
+<form action ="/customer/update/{{data.id}}" method="POST" enctype ="multipart/form-data">
+    {% csrf_token %}
+    customer name:<input type="text" name="fullname" value="{{data.fullname}}"/>
+    customer address:<input type="text" name="address" value="{{data.address}}"/>
+?
+
+    <input type="submit" value="update"/>
+
+</form>
+
+<a href="/customer">back</a>

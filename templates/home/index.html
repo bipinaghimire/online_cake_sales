@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>SoftTravel</title>
+
+        <!-- Fonts and icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <!-- custom css file link -->
+        {% load static %}
+        <link rel = "stylesheet" href = "{% static 'css/custom/newstyle.css'%}"/>
+        <script src="{% static 'js/custom/custom.js'%}"></script>
+
+    </head>
+    <body>
+<!-- header section -->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>S</span>oft Travel</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="book.html">book</a>
+        <a href="package.html">packages</a>
+        <a href="services.html">services</a>
+        <a href="gallery.html">gallery</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+       <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+<div class="login-form-container">
+
+    <i class="fas fa-close" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password?<a href="#"> click here</a></p>
+        <p>dont have an account?<a href="#">register now</a></p>
+    </form>
+</div>
+
+<!-- home section -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Adventure with us</h3>
+        <p>The world is a book and those who do not travel read only one page</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="{% static 'image/vid-2.mp4' %}"></span>
+        <span class="vid-btn" data-src="image/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="image/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="image/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="image/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="{% static 'image/vid-3.mp4' %}" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+
+    </body>
+</html>
